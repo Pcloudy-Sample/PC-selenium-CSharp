@@ -1,20 +1,20 @@
 <div align="center">
 
-# Run Selenium Tests with C# on pCloudy
+# Run Selenium Tests with C# on Pcloudy
 
-[![pCloudy](https://img.shields.io/badge/Made%20by-pCloudy-1a73e8?style=for-the-badge)](https://www.pcloudy.com) [![Selenium](https://img.shields.io/badge/Selenium-.NET-blue?style=for-the-badge)](https://www.selenium.dev/)
+[![Pcloudy](https://img.shields.io/badge/Made%20by-Pcloudy-1a73e8?style=for-the-badge)](https://www.pcloudy.com) [![Selenium](https://img.shields.io/badge/Selenium-.NET-blue?style=for-the-badge)](https://www.selenium.dev/)
 
 </div>
 
 ## Getting Started
 
-[pCloudy](https://www.pcloudy.com) is a cloud testing platform that gives you access to real browsers and devices directly from your automation scripts. This project is a simple C# Selenium example showing how to run browser automation on pCloudy’s remote Selenium grid.
+[Pcloudy](https://www.pcloudy.com) is a cloud testing platform that gives you access to real browsers and devices directly from your automation scripts. This project is a simple C# Selenium example showing how to run browser automation on Pcloudy’s remote Selenium grid.
 
 ## Prerequisites
 
 - .NET SDK 8.0 or higher
-- A [pCloudy account](https://www.pcloudy.com) with a valid email and access key
-- Network access to the pCloudy Selenium endpoint
+- A [Pcloudy account](https://www.pcloudy.com) with a valid email and access key
+- Network access to the Pcloudy Selenium endpoint
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ dotnet restore
 
 ### Configure your credentials
 
-Open `Program.cs` and update the `pcloudyOptions` dictionary with your pCloudy account values.
+Open `Program.cs` and update the `pcloudyOptions` dictionary with your Pcloudy account values.
 
 ```csharp
 var pcloudyOptions = new Dictionary<string, object>
@@ -59,26 +59,26 @@ Run the sample with:
 dotnet run --project PC-selenium-CSharp.csproj
 ```
 
-The sample launches a remote Chrome browser on pCloudy, opens `https://www.wikipedia.org/`, searches for `Selenium`, and captures a screenshot.
+The sample launches a remote Chrome browser on Pcloudy, opens `https://www.wikipedia.org/`, searches for `Selenium`, and captures a screenshot.
 
 ## Key files
 
-- `Program.cs` — Selenium test runner and pCloudy capability configuration
+- `Program.cs` — Selenium test runner and Pcloudy capability configuration
 - `PC-selenium-CSharp.csproj` — .NET project file with Selenium dependencies
 
 ## Capabilities used in this sample
 
 | Capability | Description |
 |---|---|
-| `userName` | pCloudy account email |
-| `accessKey` | pCloudy access key |
-| `os` | Operating system to run on pCloudy |
+| `userName` | Pcloudy account email |
+| `accessKey` | Pcloudy access key |
+| `os` | Operating system to run on Pcloudy |
 | `osVersion` | OS version to target |
 | `browserVersion` | Browser version to use |
 | `seleniumVersion` | Selenium version to use |
-| `project` | pCloudy project name |
-| `build` | Build name displayed in pCloudy |
-| `name` | Test name displayed in pCloudy |
+| `project` | Pcloudy project name |
+| `build` | Build name displayed in Pcloudy |
+| `name` | Test name displayed in Pcloudy |
 | `tag` | Test tag |
 | `local` | Local testing flag |
 | `pCloudy_EnableVideo` | Enable video recording |
@@ -87,13 +87,13 @@ The sample launches a remote Chrome browser on pCloudy, opens `https://www.wikip
 ## Important notes
 
 - Do not set `options.BrowserVersion` on `ChromeOptions` if `browserVersion` is already specified in `pcloudy:options`.
-- The pCloudy Selenium hub URL is configured in `Program.cs` as `_hubUrl`.
+- The Pcloudy Selenium hub URL is configured in `Program.cs` as `_hubUrl`.
 - Screenshots are saved to the `Screenshots/` folder.
 
 ## Troubleshooting
 
-- If the session fails during creation, verify your pCloudy credentials and hub URL.
-- If the browser does not start, check your network access to the pCloudy Selenium endpoint.
+- If the session fails during creation, verify your Pcloudy credentials and hub URL.
+- If the browser does not start, check your network access to the Pcloudy Selenium endpoint.
 - If the build fails, make sure the project is restored and the correct .NET SDK is installed.
 
 ## Customization
@@ -104,7 +104,7 @@ The sample launches a remote Chrome browser on pCloudy, opens `https://www.wikip
 
 ## Browser support
 
-This sample is designed to work with any browser supported by pCloudy. To target a different browser, update the Selenium options object, set the appropriate `browserName`, and adjust `pcloudyOptions["browserVersion"]` for the browser/version you want to use.
+This sample is designed to work with any browser supported by Pcloudy. To target a different browser, update the Selenium options object, set the appropriate `browserName`, and adjust `pcloudyOptions["browserVersion"]` for the browser/version you want to use.
 
 
 
@@ -113,19 +113,19 @@ This sample is designed to work with any browser supported by pCloudy. To target
 ```
 PC-selenium-CSharp/
 ├── PC-selenium-CSharp.csproj    # .NET project file
-├── Program.cs                   # Selenium test runner and pCloudy configuration
+├── Program.cs                   # Selenium test runner and Pcloudy configuration
 └── README.md                    # Project documentation
 ```
 
 ## API Documentation
 
-For more pCloudy integration information, see:
+For more Pcloudy integration information, see:
 
-- [pCloudy API Documentation](https://content.pcloudy.com/apidocs/index.html)
+- [Pcloudy API Documentation](https://content.pcloudy.com/apidocs/index.html)
 
 ## Learn More
 
-- [pCloudy Website](https://www.pcloudy.com)
+- [Pcloudy Website](https://www.pcloudy.com)
 
 ## Contributions
 
